@@ -4,8 +4,17 @@
 import os
 
 def change_names(files_location, rename_to):
+    '''
+    Python program to rename all file 
+    names in your directory
+
+    :param files_location: locate the folder 
+    containing the files 
+
+    :param rename_to: choose the name you 
+    wish to have before the number
+    '''
     os.chdir(files_location)
-    print(os.getcwd())
 
     for count, f in enumerate(os.listdir()):
         f_name, f_ext = os.path.splitext(f)
